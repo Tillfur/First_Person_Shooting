@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;  // 要有這個才能控制文字框
 using System.Diagnostics;
 
-public class Shooting : MonoBehaviour
+public class Weapon : MonoBehaviour
 {
     [Header("參考物件")]
     public GameObject PlayerObejct;

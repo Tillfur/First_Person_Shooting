@@ -987,15 +987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b968ee310fa8549a4f219e0122cbe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCamera: {fileID: 1163027378}
-  attackPoint: {fileID: 1103024875}
-  bullet: {fileID: 2792649036552080343, guid: 0444208e11ee8f5499cf7697288962cf, type: 3}
-  magazineSize: 30
-  bulletsLeft: 30
-  reloadTime: 3
-  recoilForce: 3
-  ammunitionDisplay: {fileID: 140218600}
-  reloadingDisplay: {fileID: 1991210340}
   weaponObjects:
   - {fileID: 1549982393}
   - {fileID: 1204327558}
@@ -1140,13 +1131,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1204327559}
+  - component: {fileID: 1204327560}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1204327559
 Transform:
   m_ObjectHideFlags: 0
@@ -1163,6 +1155,29 @@ Transform:
   m_Father: {fileID: 1163027376}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1204327560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204327558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2885709c285826f4ba78dbd3862498cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObejct: {fileID: 878246293}
+  PlayerCamera: {fileID: 0}
+  attackPoint: {fileID: 214240716}
+  bullet: {fileID: 0}
+  isGun: 0
+  magazineSize: 0
+  bulletsLeft: 0
+  reloadTime: 0
+  recoilForce: 0
+  ammunitionDisplay: {fileID: 140218600}
+  reloadingDisplay: {fileID: 1991210340}
 --- !u!1 &1441470981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1549982394}
+  - component: {fileID: 1549982395}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -1293,6 +1309,29 @@ Transform:
   m_Father: {fileID: 1163027376}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549982395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549982393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2885709c285826f4ba78dbd3862498cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObejct: {fileID: 878246293}
+  PlayerCamera: {fileID: 1163027378}
+  attackPoint: {fileID: 1103024875}
+  bullet: {fileID: 2792649036552080343, guid: 0444208e11ee8f5499cf7697288962cf, type: 3}
+  isGun: 1
+  magazineSize: 30
+  bulletsLeft: 30
+  reloadTime: 3
+  recoilForce: 3
+  ammunitionDisplay: {fileID: 140218600}
+  reloadingDisplay: {fileID: 1991210340}
 --- !u!1 &1676044881
 GameObject:
   m_ObjectHideFlags: 0
